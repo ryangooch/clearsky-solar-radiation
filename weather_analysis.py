@@ -220,6 +220,8 @@ if __name__ == "__main__":
 
     ax = axes[0]
     ax.plot(weather_df["timestamps"], weather_df["SOLARAD"], label="avg_solar_radiation")
+    # the time axis was offset in the data
+    # TODO: understand why the time axis needs to be shifted this much to align with solar noon
     ax.plot(
         weather_df["timestamps"] + pd.Timedelta(hours=7),
         weather_df["clearsky_radiation"],
