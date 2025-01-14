@@ -1,7 +1,7 @@
 [project]
 name = "clearsky-solar-radiation"
 version = "0.1.0"
-description = "Add your description here"
+description = "Demo project for modeling solar radiation with python"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
